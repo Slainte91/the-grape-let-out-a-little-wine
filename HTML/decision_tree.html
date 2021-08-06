@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Red Wine Quality</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="navbar-toggler-icon"></span>
+				</button> <a class="navbar-brand" href="index.html">Red Wine Quality</a>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="navbar-nav ml-md-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Machine Learning</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="decision_tree.html">Decision Tree</a>
+                                    <a class="dropdown-item" href="quality-scatters.html">Tableau</a>
+                                    <a class="dropdown-item" href="logistic_regression.html">Logistic Regression</a>
+                                    <a class="dropdown-item" href="wind_speed.html">Tableau</a>
+                                </div>
+                            </li>
+                        </ul>											
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+    <br>
+    <br>
+    <br>
+    <div id="whitebox">
+		
+                <center><h1>Decision Tree and Random Forest</h1></center>
+                <p>We used a machine learning Decision Tree to figure out which features were most important in determing "good quality" wine. First, we converted the 'Quality' column into a new column where wines rated 7 and over were classified as Good Quality, and given a rating of 1. Wines rated 6 and under were given a 0. Using Jupyter Notebook, we ran a Decision Tree and Random Forest Classifier. </p>
+                <img src="images/data.png" class="img-fluid float-center" alt="data" style="width:100%">
+                <br>
+                <p>Next, we ran the Decision Tree and Random Forest. The Decision Tree was able to predict Good Quality at 88.5% of the time, and the Random Forest was at 90%.</p>
+                <img src="images/decisionTree.png" class="img-fluid float-center" alt="decisionTree" style="width:100%">
+                <br>
+                <br>
+                <p>Finally, we ran a line of code to see which features were most important.</p>
+                <img src="images/importance.png" class="img-fluid float-center" alt="importance" style="width:100%">
+                <br>
+                <br>
+                <p>Here are box plots of the top 4 important features</p>
+                <P>1. Alcohol</P>
+                <img src="images/alcohol.png" class="img-fluid float-center" alt="alcohol" style="width:75%">
+                <p>2. Sulphates</p>
+                <img src="images/sulphates.png" class="img-fluid float-center" alt="sulphates" style="width:75%">
+                <p>3. Volatile Acidity</p>
+                <img src="images/volatile_acidity.png" class="img-fluid float-center" alt="acidity" style="width:75%">
+                <p>4. Density</p>
+                <img src="images/density.png" class="img-fluid float-center" alt="density" style="width:75%">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    </div>  
+  </body>
+</html>

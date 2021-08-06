@@ -1,0 +1,16 @@
+body {
+    background-color: darkred;
+}
+
+#whitebox {
+    background-color: whitesmoke;
+    width: 850px;
+    height: 3000px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 20px;
+
+}
